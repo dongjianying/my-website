@@ -1,16 +1,58 @@
-site_name: My Docs
+site_name: 董健颖的简介
+site_description: 这是董健颖的个人简介网站，包含了他的教育背景、工作经历、技能和项目经验等信息。
+site_author: 董健颖
 theme:
   name: material
+  #自定义本地图片logo
+  #logo: assets/little prince.png
+  #logo:material主题内置图标
+  icon:
+    logo: material/library
+  language: zh
+
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到白天模式
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: grey
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: 切换到夜间模式
+
   features:
-    - navigation.tabs
-    - navigation.top
-    - navigation.tracking
-    - search.suggest
-    - search.highlight
-    - search.share
-    - toc.integrate
-    - content.code.annotate
-    - content.code.copy
-    - content.code.expand
-    - content.code.focus
-    - content.code.highlight`
+    - navigation.instant #启用即时导航功能，提升用户体验
+    - navigation.sections #启用导航分区功能，帮助用户更好地组织和浏览内容
+    - navigation.tabs #启用导航标签功能，提供更清晰的导航结构
+    - navigation.tabs.sticky #启用粘性导航标签功能，使标签在滚动时保持可见
+    - navigation.top #启用顶部导航功能，使用户能够快速访问主要页面
+    - search #启用搜索功能，允许用户在网站内进行内容搜索
+    - search.suggest #启用搜索建议功能，帮助用户更快地找到相关内容
+    - search.highlight #启用搜索高亮功能，突出显示搜索结果中的关键词
+    - search.share #启用搜索分享功能，允许用户分享搜索结果链接
+    - toc.integrate #启用集成目录功能，在页面中显示目录结构，方便用户快速导航
+copyright: "Copyright © 2024 董健的简介. All rights reserved."
+
+nav:
+  - Resume:
+      - 自我介绍: Resume\自我介绍.md
+  - English:
+      - 英语学习总结: English\英语学习总结.md
+      - 英语学习资源: English\英语语法学习.md
+      - 英语阅读技巧: English\英语阅读技巧.md
+      - 英语作文笔法: English\英语作文笔法.md
+  - Math:
+      - 数学笔记: Math\数学笔记.md
+      - 数学电子书: Math\数学电子书.md
+      - 数学学习内容: Math\数学学习内容.md
+  - Biology:
+      - 生物化学笔记: Biology\生物化学笔记.md
+      - 生物化学电子书: Biology\生物化学电子书.md
+      - 生物学习内容: Biology\生物学习内容.md
